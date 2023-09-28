@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .menu-bar__logo>img {
+        width: 100px;
+    }
+
+    .menu-bar__item>ul>li {
+        margin: 2px;
+    }
+
+    .menu-bar__item>ul>li>a {
+        padding: 2px;
+        font-size: 12px;
+    }
+}
