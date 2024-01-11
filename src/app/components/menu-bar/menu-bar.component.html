@@ -3,10 +3,19 @@
         <img src="assets/ps-logo.png" alt="" width="140px" height="32px">
     </div>
     <div class="menu-bar__item">
+        <input (click)="openMenu()" [checked]="checkboxValue" type="checkbox" name="menu-fake" id="menu-fake"
+            class="menu-fake">
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <ul>
-            <li><a href="https://www.linkedin.com/in/jefferson-matias-ba218a276/" target="_blank">Linkedin</a></li>
-            <li><a href="https://github.com/jeffersonmatias" target="_blank">Github</a></li>
-            <li><a href="https://www.instagram.com/_jefferson_07/" target="_blank">Instagram</a></li>
+            <li><a (click)="closeMenu()" href="#">Novidades</a></li>
+            <li><a (click)="closeMenu()" href="#">Coleções</a></li>
+            <li><a (click)="closeMenu()" href="#">Ofertas</a></li>
+            <li><a (click)="closeMenu()" href="#">Assinaturas</a></li>
+            <li><a (click)="closeMenu()" href="#">Navegar</a></li>
         </ul>
     </div>
 </div>
